@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="hello.css">
+    <link href='https://t.ly/xmmdz' rel='stylesheet'>
+    <link rel="stylesheet" href="https://tinyurl.com/2wsah8sm">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="hc">
+            <h2>Hi! I'm Hansika Bose,</h2>
+            <p>I'm a Computer Science and Engineering student at SRM University - AP. I have an interest in technology 
+            <br>and am eager to put my knowledge to work in the real world as I pursue my academic goals.</p>
+        </div>
+        <div class="home-img">
+            <img src="https://tinyurl.com/5n6jhbsm" alt="Profile Pic">
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <h3>Education Details</h3>
+    <section class="education" id="education">
+      
+        <section class="institutions">
+            <div class="institution" onclick="showDetails('institution1')">
+                <img src="https://rb.gy/66c925" alt="Institution 1 Logo">
+            </div>
+            <div class="institution" onclick="showDetails('institution2')">
+                <img src="https://rb.gy/p1oge1" alt="Institution 2 Logo">
+            </div>
+            <div class="institution" onclick="showDetails('institution3')">
+                <img src="https://rb.gy/ppnw1v" alt="Institution 3 Logo">
+            </div>
+        </section>
+        <div id="details-popup" class="details-popup" onclick="hideDetails(event)">
+            <div class="details-content" onclick="event.stopPropagation()"> 
+                <span class="close" onclick="hideDetails(event)">&times;</span>
+                <img id="building-image" src="" alt="Building Image">
+                <p id="passout-year"></p>
+                <p id="cgpa"></p>
+                <p id="marks"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <h3>Skills</h3>
+<section class="skills" id="skills">
+    <div class="skills-container">
+        <div class="skill-item skill-above">
+            <i class="fas fa-code fa-3x"></i>
+            <p>C Language</p>
+        </div>
+        <div class="skill-item skill-below">
+            <i class="fas fa-laptop-code fa-3x"></i>
+            <p>C++ Language</p>
+        </div>
+        <div class="skill-item skill-above">
+            <i class="fab fa-html5 fa-3x"></i>
+            <p>HTML5</p>
+        </div>
+        <div class="skill-item skill-below">
+            <i class="fab fa-css3-alt fa-3x"></i>
+            <p>CSS</p>
+        </div>
+        <div class="skill-item skill-above">
+            <i class="fab fa-js fa-3x"></i>
+            <p>JavaScript</p>
+        </div>
+    </div>
+    <div class="line"></div>
+</section>
+    <!-- Projects Section -->
+    <h3>Projects</h3>
+    <section class="project" id="projects">
+       
+        <div class="pc">
+            <div class="pb">
+                <i class='bx bxs-bank'></i>
+                <h3>Bank Management System</h3>
+                <p>Developed a Bank Management System using C language. This system simplifies administrative tasks and boosts productivity within banking operations. Leveraging C's functionality, I created features for managing employee data, including storage, retrieval, and manipulation. The system seamlessly integrates with existing processes, empowering HR teams to track employee information, performance metrics, and payroll data efficiently.</p>
+            </div>
+        </div>
+        <br>
+        <div class="pc">
+            <div class="pb">
+                <i class='bx bx-lock-open'></i>
+                <h3>Login & Registration</h3>
+                <p>Developed a dynamic Login & Registration application with robust scheduling features. Using object-oriented principles, I crafted a modular system for seamless integration of calendar functionalities like event creation, reminders, and date navigation. By optimizing code and implementing error handling, I ensured reliability and efficiency, catering to diverse user needs.</p>
+            </div>
+        </div>
+        <br>
+        <div class="pc">
+            <div class="pb">
+                <i class='bx bx-alarm-exclamation'></i>
+                <h3>Highway Speed Alert</h3>
+                <p>Developed a simulation of an Alarm System for Car Overspeeding on Highway using Logisim. This project involved designing a digital circuit to detect overspeeding scenarios through various logic gates and creating an effective alarm system simulation.</p>
+            </div>
+        </div>
+        <br>
+        <div class="pc">
+            <div class="pb">
+                <i class='bx bx-bus'></i>
+                <h3>Campus Bus Management</h3>
+                <p>Developed a Campus Bus Management System using DBMS and SQL for administrative management of bus drivers, buses, students, and admin info. The system streamlines scheduling and record-keeping for efficient campus transportation management.</p>
+            </div>
+        </div>
+    </section>
+    <br>    
+    <section class="resume" id="resume">
+        <div id="res">
+            <img src="image.png" style="width: 500px; height: auto;">
+            <p><a href="CV.pdf" target="_blank"><u>Download Here</u></a></p>
+            </div>
+    </section>
+    <!-- Contact Section -->
+    <h3>Contact Info</h3>
+    <section class="contact" id="contact">
+       
+        <div class="contact-info">
+            <a href=""><i class='bx bxs-phone' ></i>Reach Me At: +91 99xxxxxx76</a><br>
+            <a href=" " target="_blank"><i class='bx bxl-gmail' ></i> Email Me </a><br>
+            <a href="https://t.ly/w8tX4" target="_blank"><i class='bx bxl-github'></i>View My GitHub Profile</a><br>
+            <a href="https://t.ly/WyGAO" target="_blank"><i class='bx bxl-linkedin-square' ></i>Connect with Me on LinkedIn</a><br>
+        </div>
+    </section>
+
+    <!-- Top Button -->
+    <button id="top-button" class="top-button">&uarr; Top</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright<a href="#">Hansika Bose0011</a>All rights reserved 2024.</p>
+    </footer>
+<script>
+    //institution pop up function
+        function showDetails(institution) {
+    let details = {
+        institution1: {
+            imgSrc: "https://t.ly/cn65S",
+            passoutYear: "2026",
+            cgpa: "8.63"
+        },
+        institution2: {
+            imgSrc: "https://t.ly/Erf-X",
+            passoutYear: "2022",
+            cgpa: "9.4"
+        },
+        institution3: {
+            imgSrc: "https://t.ly/kEwjK",
+            passoutYear: "2020",
+            cgpa: "N/A",
+            marks: "596"
+        }
+    };
+
+    let detail = details[institution];
+    if (detail) {
+        document.getElementById('building-image').src = detail.imgSrc;
+        document.getElementById('passout-year').textContent = "Year of Passout: " + detail.passoutYear;
+        document.getElementById('cgpa').textContent = "CGPA: " + (detail.cgpa || 'N/A');
+        document.getElementById('marks').textContent = (detail.marks ? "Marks: " + detail.marks : '');
+
+        document.getElementById('details-popup').style.display = 'flex';
+    }
+}
+//closing pop up
+function hideDetails(event) {
+    if (event.target.classList.contains('details-popup') || event.target.classList.contains('close')) {
+        document.getElementById('details-popup').style.display = 'none';
+    }
+}
+//smooth scroll,activation of navbar for respective section
+window.addEventListener('scroll', function() {
+    let topButton = document.getElementById("top-button");
+    if (window.scrollY > 200) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+
+    if (window.scrollY === 0) {
+        document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+    }
+});
+//top button functionality
+document.getElementById("top-button").addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+});
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
+                behavior: 'smooth'
+            });
+        }
+        //deactivation of active section when no section is selected
+        document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+</script>
+</body>
+</html>
